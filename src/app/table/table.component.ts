@@ -28,42 +28,51 @@ export class TableComponent implements OnInit {
     this.rowGroupPanelShow = 'onlyWhenGrouping'; // onlyWhenGrouping, always
     this.columnDefs = [
       {
+        headerName: 'athlete',
         field: 'athlete',
         width: 150,
         filter: 'agTextColumnFilter'
       },
       {
+          headerName: 'age',
         field: 'age',
         width: 90
       },
       {
+          headerName: 'country',
         field: 'country',
         width: 120
       },
       {
+          headerName: 'year',
         field: 'year',
         width: 90
       },
       {
+          headerName: 'date',
         field: 'date',
         width: 110
       },
       {
+          headerName: 'gold',
         field: 'gold',
         width: 100,
         suppressFilter: true
       },
       {
+          headerName: 'silver',
         field: 'silver',
         width: 100,
         suppressFilter: true
       },
       {
+          headerName: 'bronze',
         field: 'bronze',
         width: 100,
         suppressFilter: true
       },
       {
+          headerName: 'total',
         field: 'total',
         width: 100,
         suppressFilter: true
@@ -90,6 +99,7 @@ export class TableComponent implements OnInit {
       defaultToolPanel: 'groups'
     };
     this.frameworkComponents = { groupComponent: GroupComponent };
+
   }
 
   onGridReady(event) {
