@@ -1,0 +1,12 @@
+import { Component } from '@angular/core';
+import 'ag-grid-enterprise';
+import { TableComponent } from './table/table.component';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  title = 'app';
+}
